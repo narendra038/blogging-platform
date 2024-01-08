@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Submission Confirmation</title>
+  <link rel="stylesheet" href="blog.css">
+</head>
+<body>
+   <li ><a href="home1.html" style="color: aliceblue;">Home </a></li>
+  <h1>Published Successful</h1>
+  <h2>Published Title:</h2>
+  <p id="submittedTitle"></p>
+  <h2>Published Content:</h2>
+  <p id="submittedContent"></p>
+  <script>
+    // Retrieve values from local storage and display them
+    const submittedTitle = localStorage.getItem('submittedTitle');
+    const submittedContent = localStorage.getItem('submittedContent');
+
+    document.getElementById('submittedTitle').textContent = submittedTitle;
+    document.getElementById('submittedContent').textContent = submittedContent;
+
+  
+  </script>
+</body>
